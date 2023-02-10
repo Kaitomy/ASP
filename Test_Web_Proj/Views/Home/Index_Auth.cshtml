@@ -1,0 +1,44 @@
+﻿@{
+    Layout = null;
+}
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<body class="align">
+
+    <div class="grid align__item">
+
+        <div class="register">
+
+            <h2>Авторизация</h2>
+
+            <form asp-action="Auth" asp-controller="Home" method="post" class="form">
+
+                <div>
+                    <input type="email" placeholder="Email" name="Email" style="border-radius: 5px; background-color:rgba(255,255,255,0.2); padding:5px; margin-top: 5px; margin-bottom:5px;">
+                </div>
+
+                <div>
+                    <input type="password" name="Password" placeholder="••••••••••••" style="border-radius: 5px; background-color:rgba(255,255,255,0.2);padding:5px;margin-top: 5px; margin-bottom:5px;">
+                </div>
+
+                <div>
+                    <input type="submit" value="Войти" class="btn btn-primary" style="border-radius: 5px; background-color:rgba(255,255,255,0.2);padding:5px;margin-top: 5px; margin-bottom:5px; width:100px" />
+
+                </div>
+
+            </form>
+
+            <p>Ещё нет аккаунта? <a asp-action="Index_Register">Регистрация</a></p>
+
+        </div>
+
+    </div>
+
+</body>
+</html>

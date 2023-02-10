@@ -1,0 +1,105 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<body style="align-content:center">
+
+        <div class="grid align__item">
+
+            <div class="register">
+                <h2>Регистрация</h2>
+
+                <form asp-action="Index_Register" asp-controller="Home" method="post" class="form">
+                    <div id="content">
+                        <div id="left">
+                            <div>
+                                <label class="required" style=" color: #A4969B;">Имя:</label>
+                            </div>
+                            <div>
+
+                                <input class="required" name="Name" type="text" placeholder="Имя" style="border-radius: 5px; background-color:rgba(255,255,255,0.2); padding:5px; margin-top: 5px; margin-bottom:5px;" required>
+                            </div>
+                            <div>
+                                <label class="required" style=" color: #A4969B;">Фамилия:</label>
+                            </div>
+                            <div>
+                                <input type="text" name="Fam" placeholder="Фамилия" style="border-radius: 5px; background-color:rgba(255,255,255,0.2); padding:5px; margin-top: 5px; margin-bottom:5px;" required>
+                            </div>
+                            <div>
+                                <label class="required" style=" color: #A4969B;">Отчество:</label>
+                            </div>
+                            <div>
+                                <input type="text" name="Ot" placeholder="Отчество" style="border-radius: 5px; background-color:rgba(255,255,255,0.2); padding:5px; margin-top: 5px; margin-bottom:5px;" required>
+                            </div>
+                        </div>
+                        <div id="left">
+                            <div>
+                                <label class="required" style=" color: #A4969B;">Дата рождения:</label>
+                            </div>
+                            <div>
+                                <input type="date" id="date" name="Birth" max="2008-12-31" style="border-radius: 5px; background-color:rgba(255,255,255,0.2); padding:5px; margin-top: 5px; color:#3d3339; margin-bottom:5px;" required />
+                            </div>
+                            <label class="required" style=" color: #A4969B;">Пол:</label>
+                            <div>
+
+                                <input type="radio" id="contactChoice1" name="Gender" value="Мужской" style="border-radius: 5px; background-color:rgba(255,255,255,0.2); padding:5px; margin-top: 5px; margin-bottom:5px;" required />
+                                <label for="contactChoice1">Мужской</label>
+
+                                <input type="radio" id="contactChoice2" name="Gender" value="Женский" style="border-radius: 5px; background-color:rgba(255,255,255,0.2); padding:5px; margin-top: 5px; margin-bottom:5px;" required />
+                                <label for="contactChoice2">Женский</label>
+                            </div>
+
+                        </div>
+
+                        <div id="right">
+                            <div>
+                                <label class="required" style=" color: #A4969B;">Дата начала работы:</label>
+                            </div>
+                            <div>
+                                <input type="date" id="date" name="DateStart" min="2008-12-31" style="border-radius: 5px; background-color:rgba(255,255,255,0.2); padding:5px; margin-top: 5px; color:#3d3339; margin-bottom:5px;" required />
+                            </div>
+                            <div>
+                                <label class="required" style=" color: #A4969B;">Дата начала работы в МПТ:</label>
+                            </div>
+                            <div>
+                                <input type="date" id="date" name="DateStartMPT" min="2008-12-31" style="border-radius: 5px; background-color:rgba(255,255,255,0.2); padding:5px; margin-top: 5px; color:#3d3339; margin-bottom:5px;" required />
+                            </div>
+                            <div>
+                                <label class="required" style=" color: #A4969B;">Дата начала преподавательской деятельности:</label>
+                            </div>
+                            <div>
+                                <input type="date" id="date" name="DateStartTeach" min="2008-12-31" style="border-radius: 5px; background-color:rgba(255,255,255,0.2); padding:5px; margin-top: 5px; color:#3d3339; margin-bottom:5px;" required />
+                            </div>
+
+                        </div>
+                    </div>
+                    <label class="required" style=" color: #A4969B;">Email:</label>
+                    <div>
+                        <input name="Email" type="email" placeholder="Email" style="border-radius: 5px; background-color:rgba(255,255,255,0.2); padding:5px; margin-top: 5px; margin-bottom:5px;" required>
+                    </div>
+                    <label class="required" style=" color: #A4969B;">Пароль:</label>
+                    <div>
+                        <input name="Password" type="password" placeholder="••••••••••••" style="border-radius: 5px; background-color:rgba(255,255,255,0.2);padding:5px;margin-top: 5px; margin-bottom:5px;" required>
+                    </div>
+
+                    <div class="form__field">
+                        <input type="submit" value="Регистрация" style="border-radius: 5px; background-color:rgba(255,255,255,0.2);padding:5px;margin-top: 5px; margin-bottom:5px;">
+                    </div>
+
+                </form>
+
+                <p>Уже есть аккаунт? <a asp-action="Index_Auth">Авторизация</a></p>
+
+            </div>
+
+     
+    </div>
+
+
+
+</body>
+
+</html>
